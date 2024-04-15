@@ -1,0 +1,45 @@
+.product-star .homepromo .owl-item {
+    width: 20%;
+    max-width: 20%;
+}
+.product-star .homepromo .owl-item.star {
+    width: 40%;
+    max-width: 40%;
+    position: relative;
+}
+    .homepromo img.img-star {
+        display: block;
+        width: 100%;
+        height: 230px;
+        margin: unset;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+        .owl-item.star .text-star {
+            position: absolute;
+            top: 247px;
+            display: flex;
+            flex-direction: column;
+        }
+            .owl-item.star .text-star .heightlabel {
+                position: unset;
+                top: 0;
+                left: 0;
+                border-radius: 15px;
+
+            }
+            .owl-item.star .text-star label.preorder {
+                background: #e91e63;
+                width: 160px;
+               
+            }
+        .homepromo .owl-item.star .item .item-carts {
+            position: absolute;
+            right: 26px;
+            top: 15px;
+            z-index: 2;
+        }
+
+
+

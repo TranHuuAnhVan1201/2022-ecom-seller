@@ -1,0 +1,25 @@
+
+.need.col-12 {
+	margin: 16px 0;
+	.item {
+		a {
+			width: 120px;
+			height: 120px;
+			margin: 0 auto;
+		
+			img {
+				width: 120px;
+				height: 120px;
+				-o-object-fit: contain;
+				object-fit: contain;
+				background: #fff;
+				border-radius: 10px;
+				padding: 0 10px !important;
+				margin: 0 10px !important;
+			}
+		}
+	}
+}
+
+
+    

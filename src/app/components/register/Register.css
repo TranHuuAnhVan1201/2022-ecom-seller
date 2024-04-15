@@ -1,0 +1,337 @@
+.register-container {
+  width: auto;
+  height: auto;
+  padding: 10px 15px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 6px;
+  position: relative;
+}
+
+.register-container .group-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 8px 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.register-container .group-text span {
+  padding: 6px 0;
+}
+
+.register-container form {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.register-container form .tab-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.register-container form .tab-content .tab-step {
+  width: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6px 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.register-container form .tab-content .tab-step input {
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  line-height: 16px;
+  border-color: #ccd0d5;
+  border-radius: 5px;
+  margin: 0;
+  display: block;
+  width: 100%;
+  background: #f2f2f2;
+  margin-top: 12px;
+}
+
+.register-container form .tab-content .tab-step input.w-194 {
+  width: 194px;
+}
+
+.register-container form .tab-content .tab-step .w-120 {
+  width: 120px;
+}
+
+.register-container form .tab-content .tab-step .group-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.register-container form .tab-content .tab-step .form-controls.col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.register-container form .tab-content .tab-step .form-controls.col label {
+  font-size: 12px;
+}
+
+.register-container form .tab-content .tab-step .form-controls.col input {
+  width: 30%;
+}
+
+.register-container form .tab-content .tab-step .form-controls.col input.w100 {
+  width: 100%;
+}
+
+.register-container form .tab-content .tab-step .form-controls.col .register-img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: auto;
+  margin: auto;
+  width: auto;
+  overflow: hidden;
+}
+
+.register-container form .tab-content .tab-step .form-controls.col .register-img input {
+  width: 400px;
+  max-width: 400px;
+  padding: 0;
+  padding: 10px 5px;
+  margin-bottom: 12px;
+}
+
+.register-container form .tab-content .tab-step .form-controls.col .register-img .img-cmnd {
+  width: 400px;
+  max-width: 400px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #f2f2f2;
+  border-radius: 6px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.register-container form .tab-content .tab-step .form-controls.col .register-img .img-cmnd li {
+  width: 113px;
+  max-width: 113px;
+  height: 113px;
+  max-height: 113px;
+  border-radius: 2px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 0 113px;
+          flex: 0 0 0 113px;
+  margin: 0 6.66px 40px;
+  text-align: center;
+}
+
+.register-container form .tab-content .tab-step .form-controls.col .register-img .img-cmnd li .img-tool {
+  position: relative;
+}
+
+.register-container form .tab-content .tab-step .form-controls.col .register-img .img-cmnd li .img-tool img {
+  width: 115px;
+  height: 115px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.register-container form .tab-content .tab-step .form-controls.col .register-img .img-cmnd li .img-tool .group-edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  height: 32px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 2px 2px;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.register-container form .tab-content .tab-step .form-controls.col .register-img .img-cmnd li .img-tool .group-edit div {
+  padding: 0 6px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.register-container form .tab-content .tab-step .form-controls.col .register-img .img-cmnd li .img-tool .group-edit div.group-btn:hover {
+  color: Red;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.register-container form .tab-content .tab-step .form-controls.col .register-img .img-cmnd li .img-tool .group-edit img:hover .group-edit {
+  display: block;
+}
+
+.register-container form .tab-content .tab-step .form-controls.col .register-img .img-cmnd li .img-tool:hover .group-edit {
+  opacity: 1;
+}
+
+.register-container form .tab-content .tab-step .form-controls.col .register-img .img-cmnd li p {
+  margin-top: 4px;
+  text-align: center;
+  color: #999;
+  line-height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.register-container form .tab-content .tab-step .form-controls.col .register-img .img-cmnd li p:hover {
+  color: #1791f2;
+}
+
+.register-container form .tab-content .tab-step .form-controls.col img {
+  margin: auto;
+}
+
+.register-container form .tab-content .form-controls.btn-sm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.register-container form .tab-content .form-controls.btn-sm input.btns-newee, .register-container form .tab-content .form-controls.btn-sm button.btns-newee {
+  background: none;
+  background-color: #00a400;
+  border: none;
+  border-radius: 6px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  height: 32px;
+  overflow: hidden;
+  min-width: 200px;
+  margin-top: 12px;
+  padding: 0 32px;
+  text-shadow: none;
+  cursor: pointer;
+}
+
+.register-container form .tab-content .form-controls.btn-sm .btns-newee:nth-child(1) {
+  padding: 0 6px !important;
+}
+
+.register-container form .tab-content label {
+  min-width: 70px;
+}
+
+.register-container form .tab-content label.policy {
+  text-align: justify;
+}
+
+.register-container form .form-controls.btn-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register-container form .form-controls.btn-right .btns-newee {
+  background: none;
+  background-color: #00a400;
+  border: none;
+  border-radius: 6px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  height: 36px;
+  overflow: hidden;
+  margin-top: 4px;
+  padding: 0 32px;
+  text-shadow: none;
+  cursor: pointer;
+}
+
+.register-container.forgot .ip-forgot {
+  padding: 20px 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.register-container.forgot .form-controls.btn-sm.forgot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.register-container.forgot .form-controls.btn-sm.forgot input {
+  width: 40%;
+  margin: 0;
+  height: 40px;
+}
+
+.register-container.forgot .form-controls.btn-sm.forgot input:focus {
+  border: none !important;
+}
+/*# sourceMappingURL=Register.css.map */

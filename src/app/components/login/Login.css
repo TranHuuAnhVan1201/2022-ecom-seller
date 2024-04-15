@@ -1,0 +1,193 @@
+.container-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container-login .left {
+  width: 50%;
+}
+
+.container-login .right {
+  width: 50%;
+  height: 100%;
+}
+
+.container-login .right .card-body {
+  width: 400px;
+  height: auto;
+  padding: 16px;
+  margin: 16px;
+  background: #FFF;
+  border-radius: 6px;
+  border: 1px solid #f2f2f2;
+  position: relative;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-login .right .card-body h2 {
+  padding: 10px 0 10px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.container-login .right .card-body form {
+  margin: 20px 0 10px;
+  position: relative;
+}
+
+.container-login .right .card-body form input {
+  font-size: 16px;
+  padding: 14px 16px;
+  width: 100%;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  margin-bottom: 12px;
+  border-radius: 6px;
+}
+
+.container-login .right .card-body .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 12px;
+}
+
+.container-login .right .card-body .option .forgot:focus a,
+.container-login .right .card-body .option .forgot:hover a {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  color: #1877f2;
+  font-weight: 600;
+}
+
+.container-login .right .card-body .submit {
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  height: 42px;
+  line-height: 42px;
+  color: #FFF;
+}
+
+.container-login .right .card-body .submit a {
+  color: #FFF;
+}
+
+.container-login .right .card-body .btn-create {
+  background-color: #42b72a;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 16px;
+  margin: auto;
+  width: 100%;
+}
+
+.user-dropdown.login-register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 6px;
+  width: auto;
+  display: block;
+}
+
+.user-dropdown.login-register a {
+  display: block;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+.user-dropdown.login-register a p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-dropdown.login-register a p span {
+  font-size: 14px;
+}
+
+.user-dropdown.login-register a p span.span-icon {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.user-dropdown.login-register a p span.span-icon i {
+  font-size: 12px;
+}
+
+.user-dropdown.login-register {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.user-dropdown.login-register a:hover {
+  opacity: 0.85;
+}
+
+.user-dropdown.login-register a {
+  margin: 10px 0;
+  border-radius: 6px;
+}
+
+.user-dropdown.login-register a p img {
+  margin-right: 10px;
+}
+
+.user-dropdown.login-register a p span {
+  font-weight: 500;
+  color: #FFF;
+  padding-left: 10px;
+  border-left: 1px solid #f2f2f2;
+}
+
+.user-dropdown.login-register a:hover {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  opacity: 0.85;
+}
+
+.user-dropdown * {
+  color: #000;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+/*# sourceMappingURL=Login.css.map */

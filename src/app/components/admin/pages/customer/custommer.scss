@@ -1,0 +1,22 @@
+.newee-col-6 {
+    .card {
+        min-height: 130px;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            padding: 6px 0;
+        }
+    }
+}
+.body-cate.analysis.custommer {
+    table, table.table{
+        td {
+            text-align: center;
+        }
+    }
+}

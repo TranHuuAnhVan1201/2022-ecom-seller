@@ -1,0 +1,42 @@
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    text-align: center;
+
+    .main-content {
+        text-align: left;
+        width: 900px;
+        margin: 0 auto;
+
+        h3 {
+            margin: 10px 0;
+        }
+    }
+}
+
+
+.main-title {
+    font-size: 32px;
+    line-height: 52px;
+    font-weight: 800;
+    text-align: center; 
+    margin: 24px auto;
+   
+}
+.content-title {
+    line-height: 24px;
+    margin: 24px 0 12px;
+}
+.intro-p {
+    margin: 0 auto 16px;
+    padding: 0 12px;
+    
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+    text-align: justify;
+    span {
+        color: var(--bg-header);
+    }
+}

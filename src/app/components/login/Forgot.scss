@@ -1,0 +1,33 @@
+.register-container.forgot {
+    input {
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 16px;
+    border-color: #ccd0d5;
+    border-radius: 5px;
+    margin: 0;
+    display: block;
+    width: 100%;
+    background: rgb(242, 242, 242);
+    min-width: 420px;
+    }
+    input.btns-newee {
+    background: none;
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    height: 36px;
+    overflow: hidden;
+    margin-top: 4px;
+    padding: 0 32px;
+    text-shadow: none;
+    cursor: pointer;
+    max-width: 200px;
+    width: 200px;
+}
+}

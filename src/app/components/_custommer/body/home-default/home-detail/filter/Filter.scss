@@ -1,0 +1,107 @@
+/*# sourceMappingURL=Filter.css.map */
+.filter {
+	padding: 15px 0 15px 15px;
+	background-color: var(--bg-header);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	outline: none;
+	border: none;
+	border-radius: 10px 10px 1px 1px;
+	width: 1240px;
+	height: 54px;
+	overflow: hidden;
+	h2 {
+		margin: 0 46px;
+		color: #FFF;
+		font-weight: normal !important;
+		font-size: 18px;
+	}
+	.img-right {
+		margin-right: -10px;
+		margin-top: 43px;
+	}
+	div {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		color: #787878;
+		font-size: 15px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		img {
+			height: 28px;
+		}
+		span {
+			font-size: 15px;
+			font-weight: 500;
+			line-height: 1.6;
+			margin: 0px 4px;
+			padding: 0px 3px;
+			background-color: #ff424e;
+			border-radius: 4px;
+			color: white;
+		}
+	}
+}
+
+// .filter {
+//     padding: 15px 0 15px 15px;
+//     background-color: var(--bg-header);
+//     // border-bottom: 1px solid rgb(244, 244, 244);
+//     display: flex;
+//     -webkit-box-align: center;
+//     align-items: center;
+//     -webkit-box-pack: justify;
+//     justify-content: space-between;
+//     outline: none;
+//     border: none;
+//     border-radius: 8px;
+//     width: 1240px;
+//     height: 54px;
+//     overflow: hidden;
+//     h2 {
+//         margin: 0 46px;
+//         color: #FFF;
+//         font-weight: normal !important;
+//     }
+//     .img-right {
+//         margin-right: -10px;
+//         margin-top: 43px
+//     }
+
+//     div {
+//         display: flex;
+//         img {
+//             height: 28px;
+//         }
+//     }
+//     div{
+//         color: rgb(120, 120, 120);
+//         font-size: 15px;
+//         display: flex;
+//         -webkit-box-align: center;
+//         align-items: center;
+//         span {
+//             font-size: 15px;
+//             font-weight: 500;
+//             line-height: 1.6;
+//             margin: 0px 4px;
+//             padding: 0px 3px;
+//             background-color: rgb(255, 66, 78);
+//             border-radius: 4px;
+//             color: white;
+//         }
+//     }
+// }
+

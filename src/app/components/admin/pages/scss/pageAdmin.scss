@@ -1,0 +1,145 @@
+/*# sourceMappingURL=pageAdmin.css.map */
+.body-cate {
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 24px;
+	overflow-x: auto;
+	background: #FFF;
+	nav {
+		width: calc(100% - 48px);
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		border-bottom: 1px solid #DDD;
+		margin-bottom: 16px;
+		a {
+			cursor: pointer;
+			display: block;
+			height: auto;
+			padding: 0 12px;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			color: #000;
+			line-height: 50px;
+			height: 50px;
+			&:hover {
+				text-decoration: none;
+				color: #e84f20;
+				border-bottom: 2px solid #e84f20;
+			}
+			&:active {
+				text-decoration: none;
+				color: #e84f20;
+				border-bottom: 2px solid #e84f20;
+			}
+		}
+		li {
+			cursor: pointer;
+			display: block;
+			height: auto;
+			padding: 0 12px;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			color: #000;
+			line-height: 50px;
+			height: 50px;
+		}
+		li.active {
+			text-decoration: none;
+			color: #e84f20;
+			border-bottom: 2px solid #e84f20;
+		}
+	}
+	.form-group.av {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		height: 30px;
+		.btn-group {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			width: calc(100% - 48px);
+		}
+		label {
+			border: none;
+			height: 30px;
+			line-height: 30px;
+			border: 1px solid #DDD;
+			border-radius: 3px;
+			padding: 0 20px;
+		}
+		input {
+			border: none;
+			height: 30px;
+			line-height: 30px;
+			border: 1px solid #DDD;
+			border-radius: 3px;
+			padding: 0 20px;
+		}
+		button {
+			border: none;
+			height: 30px;
+			line-height: 30px;
+			border: 1px solid #DDD;
+			border-radius: 3px;
+			padding: 0 20px;
+		}
+	}
+}
+.td-button-group {
+	.btns {
+		padding: 0 12px;
+	}
+}
+.td-status {
+	padding: 0px 8px;
+	border-radius: 10px;
+	color: #FFF;
+	border: 1px solid transparent;
+}
+.td-status.Pending {
+	border: 1px solid #ff3945;
+	color: #000;
+}
+.td-status.Cancel {
+	background: whitesmoke;
+	border: 1px solid #000;
+	color: #000;
+}
+.td-status.Accecpt {
+	background: #017fff;
+}
+.td-status.Delay {
+	background: whitesmoke;
+	color: #000;
+}
+.td-status.Preparing {
+	background: #ffc107;
+}
+.td-status.Shipping {
+	background: #fdd835;
+}
+.td-status.Delivered {
+	background: #28a745;
+}
+.td-status.SettlementPending {
+	background: #343a40;
+}
+.td-status.DoneSettlement {
+	background: #6EE67B;
+}
+
