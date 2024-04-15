@@ -1,0 +1,30 @@
+
+
+
+.sale-together {
+    background: rgb(36, 38, 118);
+    padding: 30px 0 50px;
+    height: 100%;
+    width: 100%;
+    .banner {
+        margin: auto;
+        .slick-next,
+        .slick-prev {
+            opacity: .75;
+        }
+    }
+    .img-fluid {
+        width: 1240px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+.slick-slider {
+    margin: 0 -20px;
+}
+
+.slick-slide.slick-active {
+    width: 940px;
+    height: 605px;
+}
+}

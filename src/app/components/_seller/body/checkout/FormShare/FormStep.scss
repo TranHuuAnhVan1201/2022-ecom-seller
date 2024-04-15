@@ -1,0 +1,527 @@
+.register-container {
+    width: auto;
+    height: auto;
+    padding: 10px 15px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 6px;
+
+    .group-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 8px 0;
+        border-bottom: 1px solid rgb(242, 242, 242);
+
+        span {
+            padding: 6px 0;
+        }
+    }
+
+    form {
+        width: 100%;
+        padding: 10px 0;
+        justify-content: center;
+        align-items: center;
+
+        .tab-content {
+            display: flex;
+            flex-direction: row;
+
+            .tab-step {
+                // display: none;
+                width: 420px;
+                display: flex;
+                padding: 6px 10px;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                // width: 100%;
+
+
+                // .col-12 {
+                //     width: 100%;
+                // }
+
+                input {
+                    border: none;
+                    padding: 12px;
+                    font-size: 16px;
+                    line-height: 16px;
+                    border-color: #ccd0d5;
+                    border-radius: 5px;
+                    margin: 0;
+                    display: block;
+                    width: 100%;
+                    background: rgb(242, 242, 242);
+                    margin-top: 12px;
+                }
+
+                input.w-194 {
+                    width: 194px;
+                }
+
+                .w-120 {
+                    width: 120px;
+                }
+
+                .group-select {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+
+                .form-controls.col {
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    label {
+                        font-size: 12px;
+                    }
+
+                    input {
+                        width: 30%;
+                    }
+
+                    input.w100 {
+                        width: 100%;
+                    }
+
+                    .register-img {
+                        box-sizing: border-box;
+                        width: auto;
+                        margin: auto;
+                        width: auto;
+                        overflow: hidden;
+
+                        input {
+                            width: 400px;
+                            max-width: 400px;
+                            padding: 0;
+                            padding: 10px 5px;
+                            margin-bottom: 12px;
+                        }
+
+                        .img-cmnd {
+                            width: 400px;
+                            max-width: 400px;
+                            height: 150px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            background: #f2f2f2;
+                            border-radius: 6px;
+                            justify-content: space-evenly;
+
+                            li {
+                                width: 113px;
+                                max-width: 113px;
+                                height: 113px;
+                                max-height: 113px;
+                                // border: 1px dashed #1791f2;
+                                border-radius: 2px;
+                                flex: 0 0 0 113px;
+                                margin: 0 6.66px 40px;
+                                text-align: center;
+
+                                .img-tool {
+                                    position: relative;
+
+                                    img {
+                                        width: 115px;
+                                        height: 115px;
+                                        object-fit: contain;
+
+
+                                    }
+
+                                    .group-edit {
+                                        display: -webkit-box;
+                                        display: -ms-flexbox;
+                                        display: flex;
+                                        -webkit-box-pack: center;
+                                        -ms-flex-pack: center;
+                                        justify-content: center;
+                                        -webkit-box-align: center;
+                                        -ms-flex-align: center;
+                                        align-items: center;
+                                        position: absolute;
+                                        width: 100%;
+                                        bottom: 0px;
+                                        height: 32px;
+                                        background-color: rgba(0, 0, 0, .5);
+                                        border-radius: 0 0 2px 2px;
+
+                                        opacity: 0;
+                                        transition: 0.3s;
+
+                                        div {
+                                            padding: 0 6px;
+                                            color: #FFF;
+                                            cursor: pointer;
+                                        }
+
+                                        div.group-btn:hover {
+                                            color: Red;
+                                            font-size: 12px;
+                                            font-weight: 400;
+                                        }
+
+                                        img:hover .group-edit {
+                                            display: block;
+
+                                        }
+                                    }
+
+                                }
+
+                                .img-tool:hover {
+                                    .group-edit {
+                                        opacity: 1;
+                                    }
+                                }
+
+                                p {
+                                    margin-top: 4px;
+                                    text-align: center;
+                                    color: #999;
+                                    line-height: 16px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+
+                                }
+
+                                p:hover {
+                                    color: #1791f2;
+                                }
+                            }
+                        }
+                    }
+
+
+
+
+                    img {
+                        margin: auto;
+                    }
+
+                }
+
+            }
+
+            .form-controls.btn-sm {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+
+                input.btns-newee,
+                button.btns-newee {
+                    background: none;
+                    background-color: #00a400;
+                    border: none;
+                    border-radius: 6px;
+                    box-shadow: none;
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 600;
+                    height: 32px;
+                    overflow: hidden;
+                    min-width: 200px;
+                    margin-top: 12px;
+                    padding: 0 32px;
+                    text-shadow: none;
+                    cursor: pointer;
+                }
+
+                .btns-newee:nth-child(1) {
+                    padding: 0 6px !important;
+                }
+            }
+
+            label {
+                min-width: 70px;
+            }
+
+            label.policy {
+                text-align: justify;
+            }
+        }
+
+        .tab-step.active {
+            // display: block;
+        }
+
+        .form-controls.btn-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .btns-newee {
+                background: none;
+                background-color: #00a400;
+                border: none;
+                border-radius: 6px;
+                box-shadow: none;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+                height: 36px;
+                overflow: hidden;
+                margin-top: 4px;
+                padding: 0 32px;
+                text-shadow: none;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+
+
+.register-container.forgot {
+    .ip-forgot {
+        padding: 20px 0;
+        border-bottom: 1px solid rgb(242, 242, 242);
+    }
+
+    .form-controls.btn-sm.forgot {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+
+        input {
+            width: 40%;
+            margin: 0;
+            height: 40px;
+        }
+
+        input:focus {
+            border: none !important;
+        }
+    }
+}
+
+.form-steps {
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        overflow: hidden;
+        background: -webkit-linear-gradient(bottom, #0250c5, #0250c5);
+    }
+
+    ::selection {
+        color: #fff;
+        background: #d43f8d;
+    }
+
+    .container {
+        width: 420px;
+        background: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 30px 35px 30px 35px;
+    }
+
+    .container header {
+        font-size: 35px;
+        font-weight: 600;
+        margin: 0 0 30px 0;
+    }
+
+    .container .form-outer {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .container .form-outer form {
+        display: flex;
+        width: 100%;
+    }
+
+    .form-outer form .page {
+        width: 100%;
+        transition: margin-left 0.3s ease-in-out;
+    }
+
+    .form-outer form .page .title {
+        text-align: left;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .form-outer form .page .field {
+        width: 330px;
+        height: 45px;
+        margin: 45px 0;
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+
+    form .page .field .label {
+        position: absolute;
+        top: -30px;
+        font-weight: 500;
+    }
+
+    form .page .field input {
+        height: 100%;
+        width: 100%;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        padding-left: 15px;
+        font-size: 18px;
+    }
+
+    form .page .field select {
+        width: 100%;
+        padding-left: 10px;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    form .page .field button {
+        width: 100%;
+        height: calc(100% + 5px);
+        border: none;
+        background: #d33f8d;
+        margin-top: -20px;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: 0.5s ease;
+    }
+
+    form .page .field button:hover {
+        background: #000;
+    }
+
+    form .page .btns button {
+        margin-top: -20px !important;
+    }
+
+    form .page .btns button.prev {
+        margin-right: 3px;
+        font-size: 17px;
+    }
+
+    form .page .btns button.next {
+        margin-left: 3px;
+    }
+
+    .container .progress-bar {
+        display: flex;
+        margin: 40px 0;
+        user-select: none;
+    }
+
+    .container .progress-bar .step {
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+
+    .container .progress-bar .step p {
+        font-weight: 500;
+        font-size: 16px;
+        color: #000;
+        margin-bottom: 8px;
+    }
+
+    .progress-bar .step .bullet {
+        height: 25px;
+        width: 25px;
+        border: 2px solid #000;
+        display: inline-block;
+        border-radius: 50%;
+        position: relative;
+        transition: 0.2s;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .progress-bar .step .bullet.active {
+        border-color: #d43f8d;
+        background: #d43f8d;
+    }
+
+    .progress-bar .step .bullet span {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .progress-bar .step .bullet.active span {
+        display: none;
+    }
+
+    .progress-bar .step .bullet:before,
+    .progress-bar .step .bullet:after {
+        position: absolute;
+        content: '';
+        bottom: 11px;
+        right: -93px;
+        height: 3px;
+        width: 90px;
+        background: #262626;
+    }
+
+    .progress-bar .step .bullet.active:after {
+        background: #d43f8d;
+        transform: scaleX(0);
+        transform-origin: left;
+        animation: animate 0.3s linear forwards;
+    }
+
+    @keyframes animate {
+        100% {
+            transform: scaleX(1);
+        }
+    }
+
+    .progress-bar .step:last-child .bullet:before,
+    .progress-bar .step:last-child .bullet:after {
+        display: none;
+    }
+
+    .progress-bar .step p.active {
+        color: #d43f8d;
+        transition: 0.2s linear;
+    }
+
+    .progress-bar .step .check {
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        font-size: 15px;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+
+    .progress-bar .step .check.active {
+        display: block;
+        color: #fff;
+    }
+
+}
+
+.container.steps {
+    width: 420px;
+    max-width: 420px;
+    background: #fff;
+    border-radius: 5px;
+   
+
+}

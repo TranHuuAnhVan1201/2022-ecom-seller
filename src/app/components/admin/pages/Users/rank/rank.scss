@@ -1,0 +1,101 @@
+
+.rank {
+    background-color: #CDDCDC;  background-image: radial-gradient(at 50% 100%, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), linear-gradient(to bottom, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%);  background-blend-mode: screen, overlay;
+    // min-height: 100vh;
+    .text-right {
+        font-size: 16px;
+        text-align: right;
+    }
+    .rank-header {
+        h2 {color: var(--bg-primary)};
+        border-bottom: 1px solid rgb(245,245,245);
+    }
+    .rank-body {
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .rank-item {
+            min-height: 470px;
+            width: 18%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            .rank-item-header {
+                position: relative;
+                .col-number {
+                    padding: 0;
+                    position: absolute;
+                    z-index: 100;
+                    left: -50px;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    opacity: 0;
+                }
+                .col-check {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #337AC8;
+                    flex-direction: column;
+                    text-align: center;
+                    border-radius: 10px;
+                    p.title {
+                        font-weight: normal;
+                        color: white;
+                        font-size: 13px;
+                    }
+                    p.icon {
+                        font-weight: bolder;
+                        font-size: 16px;
+                        color: white;
+                    }
+                    
+                }
+            }
+            .rank-item-body {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .btn-up-down {
+                    padding: 10px 0;
+                }
+            }
+            .rank-item-footer {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .rank-item-footer-body {
+                    width: 100%;
+                    background-color: #81c000;
+                    height: 70px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    .title {
+                        color: white;
+                        font-size: 14px;
+                        // text-align: center;
+                    }
+                    .content {
+                        font-size: 16;
+                        text-transform: uppercase;
+                        color: white;
+                        font-weight: bold;
+                    }
+
+                }
+            }
+        }
+    }
+}

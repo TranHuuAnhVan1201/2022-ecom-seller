@@ -1,0 +1,35 @@
+.address-select {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+select {
+    -webkit-box-shadow: 0 0 0 1px #d9d9d9;
+    box-shadow: 0 0 0 1px #d9d9d9;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    background-color: white;
+    
+    border-radius: 4px;
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    padding: 0.94em 2.8em 0.94em 0.8em;
+    word-break: normal;
+    border: 1px solid transparent;
+    outline: none;
+    margin: 10px 0;
+    cursor: pointer;
+    
+    &:focus {
+        border: 1px solid red;
+    }
+}
+
+// label.address-label {
+//     margin-top: 15px;
+// }

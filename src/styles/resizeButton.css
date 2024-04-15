@@ -1,0 +1,204 @@
+.newee-btn {
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  flex-direction: column;
+  font-size: 14px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 9%);
+  border-radius: 2px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  outline: 0;
+  cursor: pointer;
+}
+.newee-btn.btn-flex-row {
+  flex-direction: row;
+  -ms-flex-direction: row;
+}
+.newee-btn.btn-tinted {
+  outline: 0;
+  background: rgba(208, 1, 27, 0.08);
+  position: relative;
+  overflow: visible;
+  color: #d0011b;
+  border: 1px solid #d0011b;
+  box-shadow: 0 1px 1px 0 rgba(0 0 0 0.03);
+}
+/* .newee-btn.btn-tinted:hover, */
+.newee-btn.btn-tinted.selected {
+  background: #d0011b;
+  color: #fff;
+  border: 1px solid #d0011b;
+}
+.newee-btn.btn-info {
+  outline: 0;
+  position: relative;
+  overflow: visible;
+  background: white;
+  color: #6c757d;
+  border: 1px solid #6c757d;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 3%);
+}
+.newee-btn.btn-info:hover,
+.newee-btn.btn-info.active {
+  background: #6c757d;
+  color: white;
+  border: 1px solid #6c757d;
+}
+.btn-l {
+  font-size: 16px;
+  height: 48px;
+  padding: 0 20px;
+  min-width: 80px;
+  max-width: 350px;
+}
+.btn-m {
+  font-size: 14px;
+  height: 32px;
+  padding: 0 12px;
+  min-width: 64px;
+  /* max-width: 250px; */
+}
+.btn-solid-primary {
+  position: relative;
+  overflow: visible;
+  outline: 0;
+  background: #d0011b;
+  color: #fff;
+  border: 1px solid #d0011b;
+}
+
+.btn-solid-primary:hover,
+.btn-solid-primary.active {
+  background: rgba(208, 1, 27, 0.08);
+  color: #d0011b;
+  border: 1px solid #d0011b;
+}
+
+/* LOADING */
+.container-loading {
+  background-color: rgb(245, 245, 245);
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring.small {
+  width: 24px;
+  height: 24px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 48px;
+  height: 48px;
+  border: 4px solid #d0011b;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #d0011b transparent transparent transparent;
+}
+.lds-ring.info div {
+  border: 4px solid #fafafa;
+  border-color: #fafafa transparent transparent transparent;
+}
+.lds-ring.small div {
+  width: 24px;
+  height: 24px;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.btn-newee {
+	line-height: 1.5715;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    background-image: none;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    /*font-size: 14px;*/
+    /*border-radius: 2px;*/
+    color: rgba(0, 0, 0, 0.85);
+    border-color: #d9d9d9;
+    background: #fff;
+	height: 40px;
+    padding: 5.4px 20px;
+    font-size: 14px;
+    border-radius: 2px;
+	outline: 0
+}
+.btn-newee:hover, .btn-newee:focus {
+    color: #40a9ff;
+    border-color: #40a9ff;
+    background: #fff;
+}
+
+.btn-newee-primary {
+	color: #fff;
+    border-color: #1890ff;
+    background: #1890ff;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+}
+
+.btn-newee > span {
+	
+    display: inline-block;
+}
+
+
+
+.large .ant-btn-lg {
+	height: 48px;
+	padding: 0 20px;
+	min-width: 180px
+}

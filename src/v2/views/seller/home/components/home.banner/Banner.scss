@@ -1,0 +1,130 @@
+/*# sourceMappingURL=Banner.css.map */
+.banners {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 15px 0;
+    cursor: pointer;
+
+    .banners-left {
+        width: 824px;
+        height: 274px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        overflow: hidden;
+        outline: none;
+        border: none;
+
+        .banner-left-img {
+            width: 824px;
+            height: 274px;
+
+            img {
+                width: 824px;
+                height: 274px;
+                aspect-ratio: auto 824 / 274;
+                -o-object-fit: contain;
+                object-fit: contain;
+            }
+        }
+
+        .banner-left-img.b2 {
+            width: 824px;
+            height: 274px;
+
+            img {
+                width: 824px;
+                height: 274px;
+                aspect-ratio: auto 824 / 274;
+                -o-object-fit: contain;
+                object-fit: contain;
+
+            }
+        }
+
+    }
+
+    .banners-right {
+        width: 408px;
+        height: 274px;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        overflow: hidden;
+        outline: none;
+        border: none;
+    }
+}
+
+@media only screen and (min-width: 220px) and (max-width: 767px) {
+    .banners {
+        height: unset;
+
+        .banners-left {
+            width: 100%;
+            height: auto;
+
+            .banner-left-img {
+              
+                width: 100%;
+                height: auto;
+
+                img {
+                  
+                    width: 100%;
+                    height: auto;
+                  
+                    aspect-ratio: unset;
+                    -o-object-fit: contain;
+                    object-fit: contain;
+                }
+            }
+
+            .slick-dots {
+                display: none !important;
+            }
+        }
+
+        .banners-right {
+            width: 408px;
+            height: 274px;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            overflow: hidden;
+            outline: none;
+            border: none;
+        }
+    }
+}
+
+
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #FFF;
+    background-color: #FFF;
+}
+
+.slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    content: "";
+    background-color: #FFF;
+    opacity: 0.4;
+    border-radius: 4px;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 6px;
+    padding: 0;
+    cursor: pointer;
+}

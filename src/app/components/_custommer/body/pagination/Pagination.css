@@ -1,0 +1,52 @@
+#pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#pagination button.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  cursor: pointer;
+}
+
+#pagination .btn.btn-pagination {
+  background-color: #337AC8;
+  color: #FFF;
+}
+
+#pagination .btn.btn-pagination.prev {
+  margin-right: 0.3rem;
+}
+
+#pagination .btn.btn-pagination.next {
+  margin-left: 0.3rem;
+}
+
+#pagination .btn.btn.btn-pagination-number {
+  margin: 0 0.1rem;
+  background: #FFF;
+  color: #000;
+}
+
+#pagination .btn.btn:hover {
+  opacity: 0.85;
+}
+/*# sourceMappingURL=Pagination.css.map */

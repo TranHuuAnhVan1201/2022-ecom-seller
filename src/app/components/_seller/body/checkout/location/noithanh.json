@@ -1,0 +1,481 @@
+[{
+        "district": "002-Quận Hoàn Kiếm"
+    },
+    {
+        "district": "003-Quận Tây Hồ"
+    },
+    {
+        "district": "004-Quận Long Biên"
+    },
+    {
+        "district": "005-Quận Cầu Giấy"
+    },
+    {
+        "district": "006-Quận Đống Đa"
+    },
+    {
+        "district": "007-Quận Hai Bà Trưng"
+    },
+    {
+        "district": "008-Quận Hoàng Mai"
+    },
+    {
+        "district": "009-Quận Thanh Xuân"
+    },
+    {
+        "district": "024-Thành phố Hà Giang"
+    },
+    {
+        "district": "040-Thành phố Cao Bằng"
+    },
+    {
+        "district": "058-Thành Phố Bắc Kạn"
+    },
+    {
+        "district": "070-Thành phố Tuyên Quang"
+    },
+    {
+        "district": "080-Thành phố Lào Cai"
+    },
+    {
+        "district": "094-Thành phố Điện Biên Phủ"
+    },
+    {
+        "district": "095-Thị Xã Mường Lay"
+    },
+    {
+        "district": "105-Thành phố Lai Châu"
+    },
+    {
+        "district": "116-Thành phố Sơn La"
+    },
+    {
+        "district": "132-Thành phố Yên Bái"
+    },
+    {
+        "district": "133-Thị xã Nghĩa Lộ"
+    },
+    {
+        "district": "148-Thành phố Hòa Bình"
+    },
+    {
+        "district": "164-Thành phố Thái Nguyên"
+    },
+    {
+        "district": "165-Thành phố Sông Công"
+    },
+    {
+        "district": "178-Thành phố Lạng Sơn"
+    },
+    {
+        "district": "193-Thành phố Hạ Long"
+    },
+    {
+        "district": "194-Thành phố Móng Cái"
+    },
+    {
+        "district": "195-Thành phố Cẩm Phả"
+    },
+    {
+        "district": "196-Thành phố Uông Bí"
+    },
+    {
+        "district": "205-Thị xã Đông Triều"
+    },
+    {
+        "district": "206-Thị xã Quảng Yên"
+    },
+    {
+        "district": "213-Thành phố Bắc Giang"
+    },
+    {
+        "district": "227-Thành phố Việt Trì"
+    },
+    {
+        "district": "228-Thị xã Phú Thọ"
+    },
+    {
+        "district": "243-Thành phố Vĩnh Yên"
+    },
+    {
+        "district": "244-Thị xã Phúc Yên"
+    },
+    {
+        "district": "256-Thành phố Bắc Ninh"
+    },
+    {
+        "district": "288-Thành phố Hải Dương"
+    },
+    {
+        "district": "290-Thị xã Chí Linh"
+    },
+    {
+        "district": "303-Quận Hồng Bàng"
+    },
+    {
+        "district": "304-Quận Ngô Quyền"
+    },
+    {
+        "district": "305-Quận Lê Chân"
+    },
+    {
+        "district": "306-Quận Hải An"
+    },
+    {
+        "district": "307-Quận Kiến An"
+    },
+    {
+        "district": "308-Quận Đồ Sơn"
+    },
+    {
+        "district": "309-Quận Dương Kinh"
+    },
+    {
+        "district": "323-Thành phố Hưng Yên"
+    },
+    {
+        "district": "336-Thành phố Thái Bình"
+    },
+    {
+        "district": "347-Thành phố Phủ Lý"
+    },
+    {
+        "district": "356-Thành phố Nam Định"
+    },
+    {
+        "district": "369-Thành phố Ninh Bình"
+    },
+    {
+        "district": "370-Thành phố Tam Điệp"
+    },
+    {
+        "district": "380-Thành phố Thanh Hóa"
+    },
+    {
+        "district": "381-Thị xã Bỉm Sơn"
+    },
+    {
+        "district": "382-Thị xã Sầm Sơn"
+    },
+    {
+        "district": "412-Thành phố Vinh"
+    },
+    {
+        "district": "413-Thị xã Cửa Lò"
+    },
+    {
+        "district": "414-Thị xã Thái Hoà"
+    },
+    {
+        "district": "432-Thị xã Hoàng Mai"
+    },
+    {
+        "district": "436-Thành phố Hà Tĩnh"
+    },
+    {
+        "district": "437-Thị xã Hồng Lĩnh"
+    },
+    {
+        "district": "449-Thị xã Kỳ Anh"
+    },
+    {
+        "district": "450-Thành Phố Đồng Hới"
+    },
+    {
+        "district": "458-Thị xã Ba Đồn"
+    },
+    {
+        "district": "461-Thành phố Đông Hà"
+    },
+    {
+        "district": "462-Thị xã Quảng Trị"
+    },
+    {
+        "district": "474-Thành phố Huế"
+    },
+    {
+        "district": "479-Thị xã Hương Thủy"
+    },
+    {
+        "district": "480-Thị xã Hương Trà"
+    },
+    {
+        "district": "490-Quận Liên Chiểu"
+    },
+    {
+        "district": "491-Quận Thanh Khê"
+    },
+    {
+        "district": "492-Quận Hải Châu"
+    },
+    {
+        "district": "493-Quận Sơn Trà"
+    },
+    {
+        "district": "494-Quận Ngũ Hành Sơn"
+    },
+    {
+        "district": "495-Quận Cẩm Lệ"
+    },
+    {
+        "district": "502-Thành phố Tam Kỳ"
+    },
+    {
+        "district": "503-Thành phố Hội An"
+    },
+    {
+        "district": "507-Thị xã Điện Bàn"
+    },
+    {
+        "district": "522-Thành phố Quảng Ngãi"
+    },
+    {
+        "district": "540-Thành phố Qui Nhơn"
+    },
+    {
+        "district": "549-Thị xã An Nhơn"
+    },
+    {
+        "district": "555-Thành phố Tuy Hoà"
+    },
+    {
+        "district": "557-Thị xã Sông Cầu"
+    },
+    {
+        "district": "568-Thành phố Nha Trang"
+    },
+    {
+        "district": "569-Thành phố Cam Ranh"
+    },
+    {
+        "district": "572-Thị xã Ninh Hòa"
+    },
+    {
+        "district": "582-Thành phố Phan Rang-Tháp Chàm"
+    },
+    {
+        "district": "593-Thành phố Phan Thiết"
+    },
+    {
+        "district": "594-Thị xã La Gi"
+    },
+    {
+        "district": "608-Thành phố Kon Tum"
+    },
+    {
+        "district": "622-Thành phố Pleiku"
+    },
+    {
+        "district": "623-Thị xã An Khê"
+    },
+    {
+        "district": "624-Thị xã Ayun Pa"
+    },
+    {
+        "district": "643-Thành phố Buôn Ma Thuột"
+    },
+    {
+        "district": "644-Thị Xã Buôn Hồ"
+    },
+    {
+        "district": "660-Thị xã Gia Nghĩa"
+    },
+    {
+        "district": "672-Thành phố Đà Lạt"
+    },
+    {
+        "district": "673-Thành phố Bảo Lộc"
+    },
+    {
+        "district": "688-Thị xã Phước Long"
+    },
+    {
+        "district": "689-Thị xã Đồng Xoài"
+    },
+    {
+        "district": "690-Thị xã Bình Long"
+    },
+    {
+        "district": "703-Thành phố Tây Ninh"
+    },
+    {
+        "district": "718-Thành phố Thủ Dầu Một"
+    },
+    {
+        "district": "721-Thị xã Bến Cát"
+    },
+    {
+        "district": "723-Thị xã Tân Uyên"
+    },
+    {
+        "district": "724-Thị xã Dĩ An"
+    },
+    {
+        "district": "725-Thị xã Thuận An"
+    },
+    {
+        "district": "731-Thành phố Biên Hòa"
+    },
+    {
+        "district": "732-Thị xã Long Khánh"
+    },
+    {
+        "district": "747-Thành phố Vũng Tàu"
+    },
+    {
+        "district": "748-Thành phố Bà Rịa"
+    },
+    {
+        "district": "760-Quận 1"
+    },
+    {
+        "district": "761-Quận 12"
+    },
+    {
+        "district": "762-Quận Thủ Đức"
+    },
+    {
+        "district": "763-Quận 9"
+    },
+    {
+        "district": "764-Quận Gò Vấp"
+    },
+    {
+        "district": "765-Quận Bình Thạnh"
+    },
+    {
+        "district": "766-Quận Tân Bình"
+    },
+    {
+        "district": "767-Quận Tân Phú"
+    },
+    {
+        "district": "768-Quận Phú Nhuận"
+    },
+    {
+        "district": "769-Quận 2"
+    },
+    {
+        "district": "770-Quận 3"
+    },
+    {
+        "district": "771-Quận 10"
+    },
+    {
+        "district": "772-Quận 11"
+    },
+    {
+        "district": "773-Quận 4"
+    },
+    {
+        "district": "774-Quận 5"
+    },
+    {
+        "district": "775-Quận 6"
+    },
+    {
+        "district": "776-Quận 8"
+    },
+    {
+        "district": "777-Quận Bình Tân"
+    },
+    {
+        "district": "778-Quận 7"
+    },
+    {
+        "district": "794-Thành phố Tân An"
+    },
+    {
+        "district": "795-Thị xã Kiến Tường"
+    },
+    {
+        "district": "815-Thành phố Mỹ Tho"
+    },
+    {
+        "district": "816-Thị xã Gò Công"
+    },
+    {
+        "district": "817-Thị xã Cai Lậy"
+    },
+    {
+        "district": "829-Thành phố Bến Tre"
+    },
+    {
+        "district": "842-Thành phố Trà Vinh"
+    },
+    {
+        "district": "851-Thị xã Duyên Hải"
+    },
+    {
+        "district": "855-Thành phố Vĩnh Long"
+    },
+    {
+        "district": "861-Thị xã Bình Minh"
+    },
+    {
+        "district": "866-Thành phố Cao Lãnh"
+    },
+    {
+        "district": "867-Thành phố Sa Đéc"
+    },
+    {
+        "district": "868-Thị xã Hồng Ngự"
+    },
+    {
+        "district": "883-Thành phố Long Xuyên"
+    },
+    {
+        "district": "884-Thành phố Châu Đốc"
+    },
+    {
+        "district": "887-Thị xã Tân Châu"
+    },
+    {
+        "district": "899-Thành phố Rạch Giá"
+    },
+    {
+        "district": "900-Thị xã Hà Tiên"
+    },
+    {
+        "district": "916-Quận Ninh Kiều"
+    },
+    {
+        "district": "917-Quận Ô Môn"
+    },
+    {
+        "district": "918-Quận Bình Thuỷ"
+    },
+    {
+        "district": "919-Quận Cái Răng"
+    },
+    {
+        "district": "923-Quận Thốt Nốt"
+    },
+    {
+        "district": "930-Thành phố Vị Thanh"
+    },
+    {
+        "district": "931-Thị xã Ngã Bảy"
+    },
+    {
+        "district": "937-Thị xã Long Mỹ"
+    },
+    {
+        "district": "941-Thành phố Sóc Trăng"
+    },
+    {
+        "district": "948-Thị xã Ngã Năm"
+    },
+    {
+        "district": "950-Thị xã Vĩnh Châu"
+    },
+    {
+        "district": "954-Thành phố Bạc Liêu"
+    },
+    {
+        "district": "959-Thị xã Giá Rai"
+    },
+    {
+        "district": "964-Thành phố Cà Mau"
+    }
+]
