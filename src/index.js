@@ -9,10 +9,6 @@ import thunk from "redux-thunk";
 import { categoryApiPr, dataLoginApiPr } from "./api/private";
 import { categoryApi, productApi } from "./api/public";
 import "./App.scss";
-import { HeaderCustomer, HeaderSeller } from "./app/components/common/header";
-import { Spinner } from "./app/components/common/Spinners";
-import { DetailCustomer, HomeCustomer } from "./app/views/customer";
-import { HomeSeller } from "./v2/views/seller";
 import {
   OFF_SPINNERS,
   ON_SPINNERS,
@@ -24,6 +20,9 @@ import {
 } from "./app/_constants/ActionType";
 import NotFoundPage from "./app/_pages/custommer-page/Not_Found_Page/NotFoundPage";
 import appReducer from "./app/_reducers/index";
+import { HeaderCustomer, HeaderSeller } from "./app/components/common/header";
+import { Spinner } from "./app/components/common/Spinners";
+import { DetailCustomer, HomeCustomer } from "./app/views/customer";
 import "./scss/main.scss";
 import "./styles/cart.css";
 import "./styles/comment.css";
@@ -36,6 +35,8 @@ import "./styles/resizeButton.css";
 import "./styles/responsive.css";
 import "./styles/slick.css";
 import "./styles/Spinners.css";
+import { list_categories } from "./v2/data";
+import { HomeSeller } from "./v2/views/seller";
 
 //import './app/'
 
@@ -216,8 +217,10 @@ function App() {
     } else {
       const fetchPage = async () => {
         try {
-          const response2 = await categoryApi.getAll();
-          dispatch({ type: PRODUCT_GET_CATEGORY, payload: response2 });
+          const res_categories = await categoryApi.getAll();
+          const is_res_categories = res_categories.length > 0 ? res_categories : list_categories
+          dispatch({ type: PRODUCT_GET_CATEGORY, payload: is_res_categories});
+          
           const response = await productApi.getAll(1000, 1);
           dispatch({ type: PRODUCT_GET_ALL, payload: response });
           dispatch({ type: OFF_SPINNERS });

@@ -16,7 +16,7 @@ var initialState = {
   productLike: [],
   favorites: [],
   productsNew: [],
-  categories: [],
+  categories: [{id: '1', name: 'Sản phẩm mới'}],
   errors: [],
   isWaiting: false,
   isError: false,
@@ -99,52 +99,7 @@ const products = (state = initialState, action) => {
         products: [...action.payload],
         isRender: true,
       };
-    //  state.products = [];
-    //  let productsSelling = [];
-    //  let productsSuggested = [];
-    //  let productsRemaining = [];
-    //  let sellings = [];
-
-    //  if (action.payload) {
-    //    action.payload.forEach((value) => {
-    //      if (
-    //        value.brand
-    //          ?.toLowerCase()
-    //          .includes("MISS EDE".toString().toLowerCase()) ||
-    //        value.brand
-    //          ?.toLowerCase()
-    //          .includes("VIPEP".toString().toLowerCase())
-    //      ) {
-    //        productsSelling.push(value);
-    //      } else if (
-    //        value.brand
-    //          ?.toLowerCase()
-    //          .includes("Sapa Secrets".toString().toLowerCase()) ||
-    //        value.brand
-    //          ?.toLowerCase()
-    //          .includes("Mẩy Kim".toString().toLowerCase())
-    //      ) {
-    //        productsSuggested.push(value);
-    //      } else {
-    //        productsRemaining.push(value);
-    //      }
-    //    });
-    //  }
-    //  if (productsSelling.length > 20) {
-    //    sellings = pickRandom(productsSelling, 20);
-    //  } else {
-    //    sellings = pickRandom(productsSelling, productsSelling.length);
-    //  }
-    //  const arr = [...productsSelling, ...productsRemaining];
-    //  const prev = pickRandom(arr, arr.length);
-
-    //  return {
-    //    ...state,
-    //    sellings: sellings,
-    //    products: [...action.payload],
-    //    productsNew: [...productsSuggested, ...prev],
-    //    isRender: true,
-    //  };
+  
 
     case Types.PRODUCT_GET_LIKE:
       return {
@@ -161,6 +116,7 @@ const products = (state = initialState, action) => {
 
     case Types.PRODUCT_GET_CATEGORY:
       return { ...state, categories: action.payload };
+  
 
     case Types.PRODUCT_ERROR:
       return { ...state, errors: action.payload };

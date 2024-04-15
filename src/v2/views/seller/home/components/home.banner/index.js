@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 import bannerRight from "../../../../../assets/images/banner/NEWEE_San-vat-Viet-01.jpg";
-import nameBanner from "../../../../../../static/Banner";
-import { ToSlug } from "../../../../../utils";
+import { list_banner } from "../../../../../data";
 import * as actions from "../../../../../reducers/actions";
+import { ToSlug } from "../../../../../utils";
 import "./Banner.scss";
 
 export const Banner = () => {
@@ -47,12 +47,12 @@ export const Banner = () => {
       },
     ],
   };
-
+console.log(list_banner)
   return (
     <div className="banners">
       <div className="banners-left owl-home ">
         <Slider {...settings}>
-          {nameBanner.map((value) => (
+          {list_banner.map((value) => (
             <Link
               to={"/search/" + ToSlug(value.name) + ".all"}
               onClick={() => onClickBrand(value.id * 1)}

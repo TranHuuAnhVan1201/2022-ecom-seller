@@ -1,7 +1,7 @@
 import React from 'react'
 import MetaHome from '../../../assets/images/meta/metahome.png'
-import { Filters } from '../common/body/filter'
 import MetaDecorator from '../Util/MetaDecorator'
+import { Filters } from '../common/body/filter'
 import Banner from './body/home-default/home-detail/banner/Banner'
 import Category from './body/home-default/home-detail/category/Category'
 import Need from './body/home-default/home-detail/need/Need'
