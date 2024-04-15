@@ -17,7 +17,7 @@ import { Banner, Category, Need, QuickLink } from "./components";
 
 const content = require("../../../../static/content.json");
 
-const HomeSeller = (props) => {
+export const HomeSeller = (props) => {
   const {
     featuredProducts,
     fetchFeaturedProducts,

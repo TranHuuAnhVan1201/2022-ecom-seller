@@ -1,14 +1,13 @@
 // import { useRouter } from 'next/router'
 import { MenuOutlined, UserOutlined } from '@ant-design/icons'
-import React, { memo, useRef, useState } from 'react'
+import { memo, useRef, useState } from 'react'
 import { AiOutlineFileSearch, AiOutlineShoppingCart } from 'react-icons/ai'
 import { BiSearchAlt } from 'react-icons/bi'
 import { HiChevronDown } from 'react-icons/hi'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useHistory } from 'react-router-dom'
-import logo from '../../../../newee/logo/logo.png'
-import { ToSlug } from '../../../utils'
 import { USER_LOGOUT } from '../../../_constants/ActionType'
+import { ToSlug } from '../../../utils'
 
 export const HeaderCustomer = memo(() => {
     const history = useHistory()
@@ -77,7 +76,9 @@ export const HeaderCustomer = memo(() => {
                         ?.toLowerCase()
                         .includes(newFilter.toString().toLowerCase()) ||
                     product.content1?.toLowerCase().includes(newFilter.toString().toLowerCase()) ||
-                    product.categoryName?.toLowerCase().includes(newFilter.toString().toLowerCase())
+                    product.categoryName
+                        ?.toLowerCase()
+                        .includes(newFilter.toString().toLowerCase()),
             )
             setStates({ keyword: newFilter, productLikeFilter: data })
         }
@@ -135,7 +136,7 @@ export const HeaderCustomer = memo(() => {
                     <div className="header-nav-search-wrap">
                         <div className="header-nav-search">
                             <div className="header-nav-logo">
-                                <Link to="/" className="logo">
+                                {/* <Link to="/" className="logo">
                                     <img
                                         src={logo}
                                         width={148}
@@ -143,7 +144,8 @@ export const HeaderCustomer = memo(() => {
                                         alt="newee"
                                         className="img-logo"
                                     ></img>
-                                </Link>
+                                </Link> */}
+                                <h2 style={{ color: 'white' }}>THAV</h2>
                             </div>
                             <div className="header-nav-search-btn mr-3" ref={node}>
                                 <div className={active ? 'search-bar red' : 'search-bar'}>
@@ -198,7 +200,7 @@ export const HeaderCustomer = memo(() => {
                                                                             {value.name}
                                                                         </div>
                                                                     </Link>
-                                                                )
+                                                                ),
                                                             )
                                                         ) : (
                                                             <>
@@ -250,7 +252,7 @@ export const HeaderCustomer = memo(() => {
                                                             onClick={() =>
                                                                 handleClickMenu(
                                                                     value.name,
-                                                                    value.id
+                                                                    value.id,
                                                                 )
                                                             }
                                                         >
@@ -349,9 +351,7 @@ export const HeaderCustomer = memo(() => {
                                                 {states.productLikeFilter.length > 0 ? (
                                                     states.productLikeFilter.map((value) => (
                                                         <Link
-                                                            to={`/san-pham/${ToSlug(value.name)}.${
-                                                                value.id
-                                                            }`}
+                                                            to={`/san-pham/${ToSlug(value.name)}.${value.id}`}
                                                             key={value.id}
                                                         >
                                                             <div className="search-result-span">

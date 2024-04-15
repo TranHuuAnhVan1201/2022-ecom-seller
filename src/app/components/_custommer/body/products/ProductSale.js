@@ -9,7 +9,7 @@ function ProductSale(props) {
   if (errors.length !== 0 || products.length === 0) {
     return  <div className="product-list p-slider" id="product-tab" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
               <p>Product not found</p>
-</div>
+          </div>
   }
 
   var settings = {
