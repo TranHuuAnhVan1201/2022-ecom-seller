@@ -1,15 +1,15 @@
-import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import Slider from 'react-slick'
 import { Cards } from '../../../common/card/Cards'
 
 function ProductSale(props) {
-  const dispatch = useDispatch()
 
   const { products, errors } = useSelector((state) => state.FetchAllProduct)
-
+ 
   if (errors.length !== 0 || products.length === 0) {
-    return <div>Product not found</div>
+    return  <div className="product-list p-slider" id="product-tab" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+              <p>Product not found</p>
+</div>
   }
 
   var settings = {
@@ -79,6 +79,8 @@ function ProductSale(props) {
       },
     ],
   }
+
+
 
   return (
     <div className="product-list p-slider" id="product-tab">
