@@ -1,8 +1,8 @@
 import { ErrorMessage } from '@hookform/error-message'
-import React from 'react'
 import { useForm } from 'react-hook-form'
 import { useDispatch } from 'react-redux'
 import { Link, useHistory } from 'react-router-dom'
+import { ID_CARD_SELLER, ID_USER_SELLER, TOKEN_SELLER } from 'v2/data/constant'
 import { dataLoginApiPr } from '../../../api/private'
 import { USER, USER_LOGOUT } from '../../_constants/ActionType'
 import './Login.scss'
@@ -25,9 +25,9 @@ function Login({ setToken }) {
         await dispatch({ type: USER_LOGOUT })
         await dispatch({ type: USER, user })
 
-        localStorage.setItem('tokenSeller', user.token)
-        localStorage.setItem('idCartSeller', user.cart)
-        localStorage.setItem('idUserSeller', user.idUser)
+        localStorage.setItem(TOKEN_SELLER, user.token)
+        localStorage.setItem(ID_CARD_SELLER, user.cart)
+        localStorage.setItem(ID_USER_SELLER, user.idUser)
         localStorage.setItem('user', JSON.stringify(user))
         setToken(user.token)
         history.push(`/`)

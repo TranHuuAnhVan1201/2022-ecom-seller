@@ -1,10 +1,20 @@
 import { LockOutlined, UserOutlined } from '@ant-design/icons'
 import { Button, Card, Checkbox, Form, Input, Row } from 'antd'
-
+import { useHistory } from 'react-router-dom'
+import { ID_CARD_SELLER, ID_USER_SELLER, TOKEN_SELLER, USER_INFORMATION } from 'v2/data/constant'
 export const LoginScreen = () => {
+  const history = useHistory()
   const onFinish = (values) => {
     console.log('Received values of form: ', values)
-    
+    localStorage.clear()
+
+    localStorage.setItem(TOKEN_SELLER, TOKEN_SELLER)
+    localStorage.setItem(ID_CARD_SELLER, ID_CARD_SELLER)
+    localStorage.setItem(ID_USER_SELLER, ID_USER_SELLER)
+    localStorage.setItem(USER_INFORMATION, JSON.stringify(values))
+    localStorage.setItem('dataConnect', JSON.stringify(values))
+
+    history.push('/')
   }
   return (
     <Row className="d-flex justify-content-center align-items-center">
