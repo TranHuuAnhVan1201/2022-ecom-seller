@@ -1,11 +1,12 @@
 import axios from 'axios'
+import { TOKEN_SELLER } from 'v2/data/constant'
 import * as Config from '../_constants/ActionType'
 
 const apiLocalhost0 = async (endPoint, method, body) => {
   return await axios({
     headers: {
       'Content-Type': 'application/json',
-      Authorization: `Bearer ${localStorage.getItem('tokenSeller')}`,
+      Authorization: `Bearer ${localStorage.getItem(TOKEN_SELLER)}`,
     },
     method: method,
     url: `${Config.API_NEWEE_5001}/${endPoint}`,

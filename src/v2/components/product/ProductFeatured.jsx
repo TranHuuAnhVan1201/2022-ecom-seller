@@ -1,5 +1,4 @@
 import PropType from "prop-types";
-import React from "react";
 import { HiHeart, HiOutlineHeart } from "react-icons/hi";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Skeleton from "react-loading-skeleton";
@@ -13,7 +12,7 @@ function capitalize(s) {
 }
 
 const ProductFeatured = ({ product, key }) => {
-  const { favorites, sellings } = useSelector((state) => state.FetchAllProduct);
+  const { favorites, } = useSelector((state) => state.FetchAllProduct);
   const { actionToFavorite } = UseWishList();
   const history = useHistory();
   const onClickItem = () => {
@@ -23,7 +22,7 @@ const ProductFeatured = ({ product, key }) => {
   };
 
   return (
-    //<SkeletonTheme color="#e1e1e1" highlightColor="#f2f2f2">
+ 
     <div className="card card-whish-list item-sale col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-2">
       <div className="a-hover" onClick={onClickItem}>
         {product.link ? (
@@ -122,7 +121,7 @@ const ProductFeatured = ({ product, key }) => {
         )}
       </div>
     </div>
-    //</SkeletonTheme>
+  
   );
 };
 

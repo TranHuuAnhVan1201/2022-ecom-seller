@@ -1,2 +1,1 @@
-
-export { default as HomeSeller } from "./home";
+export * from './home'

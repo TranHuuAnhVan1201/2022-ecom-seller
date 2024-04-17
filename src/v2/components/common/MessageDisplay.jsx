@@ -1,5 +1,4 @@
 import PropType from "prop-types";
-import React from "react";
 import { AntButton } from "../button";
 
 const MessageDisplay = ({ message, description, buttonLabel, action }) => (
@@ -10,14 +9,11 @@ const MessageDisplay = ({ message, description, buttonLabel, action }) => (
     {description && <span>{description}</span>}
     <br />
     {action && (
-      //  <button className="button button-small" onClick={action} type="button">
-      //    {buttonLabel || "Okay"}
-      //  </button>
+      
       <AntButton
         type={"primary"}
         size={"large"}
         icons={null}
-        //  isLoading={isLoadingRecommended}
         handle={action}
         name={buttonLabel || "Okay!"}
       />
