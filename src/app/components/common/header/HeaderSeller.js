@@ -1,129 +1,114 @@
 // import { useRouter } from 'next/router'
-import { MenuOutlined, UserOutlined } from "@ant-design/icons";
-import React, { memo, useRef, useState } from "react";
-import { AiOutlineFileSearch, AiOutlineShoppingCart } from "react-icons/ai";
-import { BiSearchAlt } from "react-icons/bi";
-import { HiChevronDown } from "react-icons/hi";
-import { useDispatch, useSelector } from "react-redux";
-import { Link, useHistory } from "react-router-dom";
-import logo from "../../../../newee/logo/logo.png";
-import { useFetchProducts } from "../../../hooks";
-import { ToSlug } from "../../../utils";
-import { USER_LOGOUT } from "../../../_constants/ActionType";
+import { MenuOutlined, UserOutlined } from '@ant-design/icons'
+import { memo, useRef, useState } from 'react'
+import { AiOutlineFileSearch, AiOutlineShoppingCart } from 'react-icons/ai'
+import { BiSearchAlt } from 'react-icons/bi'
+import { HiChevronDown } from 'react-icons/hi'
+import { useDispatch, useSelector } from 'react-redux'
+import { Link, useHistory } from 'react-router-dom'
+import { USER_INFORMATION } from 'v2/data/constant'
+import logo from '../../../../newee/logo/logo.png'
+import { USER_LOGOUT } from '../../../_constants/ActionType'
+import { useFetchProducts } from '../../../hooks'
+import { ToSlug } from '../../../utils'
 
 export const HeaderSeller = memo(() => {
-  const history = useHistory();
-  const dispatch = useDispatch();
+  const history = useHistory()
+  const dispatch = useDispatch()
 
   const {
     userInfo,
     cart: { cartItems },
     categories,
     products,
-  } = useSelector((state) => state.FetchAllProduct);
-  useFetchProducts(1000);
+  } = useSelector((state) => state.FetchAllProduct)
+  useFetchProducts(1000)
 
-  const [searchTerm, setSearchTerm] = useState("");
-  const typingTimeoutRef = useRef(null);
-  const [active, setActive] = useState(false);
-  const [states, setStates] = useState({ keyword: "", productLikeFilter: [] });
+  const [searchTerm, setSearchTerm] = useState('')
+  const typingTimeoutRef = useRef(null)
+  const [active, setActive] = useState(false)
+  const [states, setStates] = useState({ keyword: '', productLikeFilter: [] })
 
   function handleSearchTermChange(e) {
-    e.preventDefault();
-    const value = e.target.value;
-    setSearchTerm(value);
-    setActive(true);
+    e.preventDefault()
+    const value = e.target.value
+    setSearchTerm(value)
+    setActive(true)
 
     if (typingTimeoutRef.current) {
-      clearTimeout(typingTimeoutRef.current);
+      clearTimeout(typingTimeoutRef.current)
     }
 
     // moi lan go doi 300ms
     typingTimeoutRef.current = setTimeout(() => {
-      handleFilterChange(value);
-    }, 300);
+      handleFilterChange(value)
+    }, 300)
 
-    if (e.key === "Enter") {
-      history.replace(`/search/?keyword=${searchTerm}`);
-      setActive(false);
-      return;
+    if (e.key === 'Enter') {
+      history.replace(`/search/?keyword=${searchTerm}`)
+      setActive(false)
+      return
     }
   }
   function handleSubmit(e) {
-    e.preventDefault();
+    e.preventDefault()
 
-    history.replace(`/search/?keyword=${searchTerm}`);
-    setActive(false);
+    history.replace(`/search/?keyword=${searchTerm}`)
+    setActive(false)
   }
 
   function handleClickMenu(name, id) {
-    history.replace(`/search/${ToSlug(name)}.${id}}`);
-    setActive(false);
+    history.replace(`/search/${ToSlug(name)}.${id}}`)
+    setActive(false)
   }
 
   function handleFilterChange(newFilter) {
     if (newFilter !== undefined) {
       const data = products.filter(
         (product) =>
-          product.name
-            ?.toLowerCase()
-            .includes(newFilter.toString().toLowerCase()) ||
-          product.brand
-            ?.toLowerCase()
-            .includes(newFilter.toString().toLowerCase()) ||
-          product.description
-            ?.toLowerCase()
-            .includes(newFilter.toString().toLowerCase()) ||
-          product.content1
-            ?.toLowerCase()
-            .includes(newFilter.toString().toLowerCase()) ||
-          product.categoryName
-            ?.toLowerCase()
-            .includes(newFilter.toString().toLowerCase())
-      );
-      setStates({ keyword: newFilter, productLikeFilter: data });
+          product.name?.toLowerCase().includes(newFilter.toString().toLowerCase()) ||
+          product.brand?.toLowerCase().includes(newFilter.toString().toLowerCase()) ||
+          product.description?.toLowerCase().includes(newFilter.toString().toLowerCase()) ||
+          product.content1?.toLowerCase().includes(newFilter.toString().toLowerCase()) ||
+          product.categoryName?.toLowerCase().includes(newFilter.toString().toLowerCase()),
+      )
+      setStates({ keyword: newFilter, productLikeFilter: data })
     }
   }
 
-  // Cái này để tắt
-  const node = useRef();
+  const node = useRef()
   const handleClick = () => {
     if (!active) {
-      console.log("đã active");
-      document.addEventListener("click", handleOutsideClick, false);
+      document.addEventListener('click', handleOutsideClick, false)
     } else {
-      console.log("đã tắt");
-      document.removeEventListener("click", handleOutsideClick, false);
+      document.removeEventListener('click', handleOutsideClick, false)
     }
     setActive((prevState) => ({
       active: !prevState.active,
-    }));
-  };
+    }))
+  }
   const handleOutsideClick = (e) => {
     if (node || node.current === null) {
-      setActive(false);
-      return;
+      setActive(false)
+      return
     } else if (!node.current.contains(e.target)) {
-      setActive(false);
-      return;
+      setActive(false)
+      return
     }
-  };
+  }
 
-  const [check, setCheck] = useState(false);
+  const [check, setCheck] = useState(false)
 
   const onLogout = async () => {
-    setCheck(false);
-    await localStorage.removeItem("cartItems");
-    await localStorage.removeItem("idCartSeller");
-    await localStorage.removeItem("idUserSeller");
-    await localStorage.removeItem("shop");
-    await localStorage.removeItem("tokenSeller");
-    await localStorage.removeItem("user");
-    dispatch({ type: USER_LOGOUT });
-    history.push("/");
-    window.location.reload();
-  };
+    setCheck(false)
+    localStorage.clear()
+    dispatch({ type: USER_LOGOUT })
+    history.push('/')
+    window.location.reload()
+  }
 
+  const getInformation = JSON.parse(localStorage.getItem(USER_INFORMATION))
+  console.log('getInformation', getInformation)
   return (
     <div className="header-wrap top">
       <div className="wrap">
@@ -132,17 +117,11 @@ export const HeaderSeller = memo(() => {
             <div className="header-nav-search">
               <div className="header-nav-logo">
                 <Link to="/" className="logo">
-                  <img
-                    src={logo}
-                    width={148}
-                    height={60}
-                    alt="newee"
-                    className="img-logo"
-                  ></img>
+                  <img src={logo} width={148} height={60} alt="newee" className="img-logo"></img>
                 </Link>
               </div>
               <div className="header-nav-search-btn mr-3" ref={node}>
-                <div className={active ? "search-bar red" : "search-bar"}>
+                <div className={active ? 'search-bar red' : 'search-bar'}>
                   <div className="search-bar-main">
                     <form
                       role="search"
@@ -168,8 +147,7 @@ export const HeaderSeller = memo(() => {
                                 <span>
                                   <BiSearchAlt />
                                 </span>
-                                Tìm kiếm đơn hàng với cú pháp: Số điện thoại/Mã
-                                đơn hàng
+                                Tìm kiếm đơn hàng với cú pháp: Số điện thoại/Mã đơn hàng
                               </div>
                             </Link>
                           </div>
@@ -178,12 +156,7 @@ export const HeaderSeller = memo(() => {
                             {states.productLikeFilter.length > 0 ? (
                               states.productLikeFilter.map((value) => (
                                 <Link
-                                  to={
-                                    "/product-detail/" +
-                                    ToSlug(value.name) +
-                                    "." +
-                                    value.id
-                                  }
+                                  to={'/product-detail/' + ToSlug(value.name) + '.' + value.id}
                                   key={value.id}
                                 >
                                   <div className="search-result-span">
@@ -197,9 +170,7 @@ export const HeaderSeller = memo(() => {
                             ) : (
                               <>
                                 <Link to="/">
-                                  <div className="search-result-span empty">
-                                    Không có kết quả
-                                  </div>
+                                  <div className="search-result-span empty">Không có kết quả</div>
                                 </Link>
                               </>
                             )}
@@ -221,7 +192,7 @@ export const HeaderSeller = memo(() => {
 
               <div className="header-nav-cart">
                 <div className="container">
-                  <div className="history" style={{ display: "none" }}>
+                  <div className="history" style={{ display: 'none' }}>
                     <Link to="/san-pham">
                       <AiOutlineFileSearch />
                     </Link>
@@ -236,9 +207,7 @@ export const HeaderSeller = memo(() => {
                             <div
                               className="header__qr-link"
                               key={key}
-                              onClick={() =>
-                                handleClickMenu(value.name, value.id)
-                              }
+                              onClick={() => handleClickMenu(value.name, value.id)}
                             >
                               {value.name}
                             </div>
@@ -273,10 +242,7 @@ export const HeaderSeller = memo(() => {
                               <span>Ví Newee</span>
                             </p>
                           </Link>
-                          <Link
-                            to="/admin/analysis-bank"
-                            className="header__qr-link"
-                          >
+                          <Link to="/admin/analysis-bank" className="header__qr-link">
                             <p>
                               <span>Doanh thu</span>
                             </p>
@@ -296,7 +262,7 @@ export const HeaderSeller = memo(() => {
                           <p
                             onClick={onLogout}
                             className="header__qr-link"
-                            style={{ cursor: "pointer" }}
+                            style={{ cursor: 'pointer' }}
                           >
                             <span>Thoát tài khoản</span>
                           </p>
@@ -308,6 +274,7 @@ export const HeaderSeller = memo(() => {
                         Tài khoản
                         <br />
                         {userInfo && userInfo.email}
+                        {getInformation && getInformation.username}
                       </span>
                       <HiChevronDown />
                     </div>
@@ -323,7 +290,7 @@ export const HeaderSeller = memo(() => {
         </div>
         <div className="ui-mobile">
           <div className="header-nav-search-btn" ref={node}>
-            <div className={active ? "search-bar red" : "search-bar"}>
+            <div className={active ? 'search-bar red' : 'search-bar'}>
               <div className="search-bar-main">
                 <form
                   role="search"
@@ -349,8 +316,7 @@ export const HeaderSeller = memo(() => {
                             <span>
                               <BiSearchAlt />
                             </span>
-                            Tìm kiếm đơn hàng với cú pháp: Số điện thoại/Mã đơn
-                            hàng
+                            Tìm kiếm đơn hàng với cú pháp: Số điện thoại/Mã đơn hàng
                           </div>
                         </Link>
                       </div>
@@ -359,12 +325,7 @@ export const HeaderSeller = memo(() => {
                         {states.productLikeFilter.length > 0 ? (
                           states.productLikeFilter.map((value) => (
                             <Link
-                              to={
-                                "/product-detail/" +
-                                ToSlug(value.name) +
-                                "." +
-                                value.id
-                              }
+                              to={'/product-detail/' + ToSlug(value.name) + '.' + value.id}
                               key={value.id}
                             >
                               <div className="search-result-span">
@@ -378,9 +339,7 @@ export const HeaderSeller = memo(() => {
                         ) : (
                           <>
                             <Link to="/">
-                              <div className="search-result-span empty">
-                                Không có kết quả
-                              </div>
+                              <div className="search-result-span empty">Không có kết quả</div>
                             </Link>
                           </>
                         )}
@@ -403,5 +362,5 @@ export const HeaderSeller = memo(() => {
         </div>
       </div>
     </div>
-  );
-});
+  )
+})

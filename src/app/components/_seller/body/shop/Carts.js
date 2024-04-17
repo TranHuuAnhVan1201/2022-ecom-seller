@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useHistory } from 'react-router-dom'
 import * as actions from '../../../../_actions/custommer/products/product'
@@ -24,10 +24,10 @@ function Carts(props) {
   const [quan, setQuan] = useState(1)
   const [quantity, setQuantity] = useState(1)
 
-  var idCart = localStorage.getItem('idCartSeller')
+  var idCart = localStorage.getItem(ID_CARD_SELLER)
 
   useEffect(() => {
-    if (localStorage.getItem('idCartSeller')) {
+    if (localStorage.getItem(ID_CARD_SELLER)) {
       dispatch(actions.actLoadCartListRequest(idCart))
     }
   }, [])
@@ -181,7 +181,7 @@ function Carts(props) {
                                         {formatVND(
                                           value.totalPriceDiscount > 0
                                             ? value.totalPriceDiscount
-                                            : value.totalPrice
+                                            : value.totalPrice,
                                         )}{' '}
                                         ₫
                                       </span>

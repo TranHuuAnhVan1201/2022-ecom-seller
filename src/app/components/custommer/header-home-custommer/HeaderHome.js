@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types'
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useHistory } from 'react-router-dom'
 import logo from '../../../../newee/logo/logo.png'
-import { ToSlug } from '../../../utils/ToSlug'
 import * as actions from '../../../_actions/custommer/products/product'
 import apiLocalhost0 from '../../../_untils/apiLocalhost0'
+import { ToSlug } from '../../../utils/ToSlug'
 import './Header.scss'
 HeaderHome.propTypes = {
   onSub: PropTypes.func,
@@ -41,7 +41,7 @@ function HeaderHome(props) {
 
   const history = useHistory()
   useEffect(() => {
-    if (localStorage.getItem('tokenSeller')) {
+    if (localStorage.getItem(TOKEN_SELLER)) {
       setCheck(true)
     }
   }, [])
@@ -55,7 +55,7 @@ function HeaderHome(props) {
   const onLogout = () => {
     setCheck(false)
     localStorage.removeItem('checkToken')
-    localStorage.removeItem('tokenSeller')
+    localStorage.removeItem(TOKEN_SELLER)
     window.location.href = `https://newee.asia/dangnhap.html`
     window.setTimeout(window.location.reload.bind(window.location), 10)
   }
@@ -142,7 +142,7 @@ function HeaderHome(props) {
       const data = FetchProduct.filter(
         (product) =>
           product.name.toLowerCase().includes(newFilter.toString().toLowerCase()) ||
-          product.brand.toLowerCase().includes(newFilter.toString().toLowerCase())
+          product.brand.toLowerCase().includes(newFilter.toString().toLowerCase()),
       )
       setState({ keyword: newFilter, productsFilter: data })
     }

@@ -1,73 +1,64 @@
-import axios from "axios";
-import queryString from "query-string";
+import axios from 'axios'
+import queryString from 'query-string'
 
 const axiosClient = axios.create(
   {
     // baseURL: process.env.REACT_APP_API_URL || 'https://api.newee.asia:5001',
-    baseURL: "https://api.newee.asia:5001",
+    baseURL: 'https://api.newee.asia:5001',
     headers: {
-      "content-type": "application/json",
+      'content-type': 'application/json',
     },
     paramsSerializer: (params) => queryString.stringify(params),
   },
   function (error) {
-    console.warn(error);
+    console.warn(error)
     if (error.response.status === 404) {
-      console.warn(error);
-      return Promise.reject(error);
+      console.warn(error)
+      return Promise.reject(error)
     }
-  }
-);
+  },
+)
 
 axiosClient.interceptors.request.use(async (config) => {
-  const token = localStorage.getItem("tokenSeller");
+  const token = localStorage.getItem('tokenSeller')
   if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
+    config.headers.Authorization = `Bearer ${token}`
   }
 
-  return config;
-});
+  return config
+})
 
 axiosClient.interceptors.response.use(
   (response) => {
     if (response && response.data.data) {
-      return response.data.data;
+      return response.data.data
     } else if (response && response.data) {
-      return response.data;
+      return response.data
     }
 
-    return response;
+    return response
   },
   (error) => {
     if (
-      error === "undefined" ||
+      error === 'undefined' ||
       error === undefined ||
       error.response === undefined ||
-      error.response === "undefined"
+      error.response === 'undefined'
     ) {
-      return [];
+      return []
     } else if (error.response.status === 404 || error.response.status === 400) {
-      throw new Error(`${error.config.url} not found`);
+      throw new Error(`${error.config.url} not found`)
     } else if (error.response) {
       if (error.response.status === 500) {
-        return [];
+        return []
       } else if (error.response.status === 401) {
-        localStorage.removeItem("cartItems");
-        localStorage.removeItem("idCartSeller");
-        localStorage.removeItem("idUserSeller");
-        localStorage.removeItem("shop");
-        localStorage.removeItem("tokenSeller");
-        localStorage.removeItem("user");
-        localStorage.removeItem("idCart");
-        localStorage.removeItem("idUser");
-        localStorage.removeItem("token");
-
-        window.location.href = "/login";
-        return [];
+        localStorage.clear()
+        window.location.href = '/login'
+        return []
       }
     }
-    return error.response.data || [];
-  }
-);
+    return error.response.data || []
+  },
+)
 
-export default axiosClient;
+export default axiosClient
