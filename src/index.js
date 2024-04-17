@@ -10,7 +10,7 @@ import { ID_CARD_SELLER, ID_USER_SELLER, TOKEN_SELLER } from 'v2/data/constant'
 import LoginScreen from 'v2/views/auth/login'
 import { categoryApiPr, dataLoginApiPr } from './api/private'
 import { categoryApi, productApi } from './api/public'
-import './App.scss'
+import './styles/App.scss'
 import {
   OFF_SPINNERS,
   ON_SPINNERS,
